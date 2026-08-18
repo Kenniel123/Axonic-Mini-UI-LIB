@@ -1,5 +1,7 @@
+-- Load the Library
 local UiLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kenniel123/Axonic-Mini-UI-LIB/refs/heads/main/AxonicMiniUILIB"))()
 
+-- Create a Window
 local lib = UiLibrary.new("Axonic", {
     Theme = "Dark",
     KeySystem = true,
@@ -8,11 +10,13 @@ local lib = UiLibrary.new("Axonic", {
     DiscordLink = "https://discord.gg/6bCRCGTNGT",
     LifetimeKeyLink = "https://discord.gg/6bCRCGTNGT"
 })
+-- Available Elements
 
 lib:CreateDivider({
     Text = "ELEMENTS"
 })
 
+-- Toggle
 local Toggle = lib:CreateToggle({
     Name = "Toggle",
     Default = false,
@@ -21,8 +25,8 @@ local Toggle = lib:CreateToggle({
     end
 })
 
+-- Input
 local Input
-
 Input = lib:CreateInput({
     Name = "Input",
     Placeholder = "Enter text...",
@@ -32,8 +36,8 @@ Input = lib:CreateInput({
     end
 })
 
+-- Number Input Same as Input
 local NumberInput
-
 NumberInput = lib:CreateInput({
     Name = "Number Input",
     Placeholder = "Enter number...",
@@ -44,6 +48,7 @@ NumberInput = lib:CreateInput({
     end
 })
 
+-- Button
 local Button = lib:CreateButton({
     Name = "Button",
     Callback = function()
@@ -51,6 +56,7 @@ local Button = lib:CreateButton({
     end
 })
 
+-- Dropdwon
 local Dropdown = lib:CreateDropdown({
     Name = "Dropdown",
     Options = {
@@ -64,6 +70,7 @@ local Dropdown = lib:CreateDropdown({
     end
 })
 
+-- Slider
 local Slider = lib:CreateSlider({
     Name = "Slider",
     Min = 0,
@@ -74,6 +81,7 @@ local Slider = lib:CreateSlider({
     end
 })
 
+-- Keybind
 local Keybind = lib:CreateKeybind({
     Name = "Keybind",
     Default = Enum.KeyCode.RightShift,
@@ -87,10 +95,12 @@ local Keybind = lib:CreateKeybind({
     end
 })
 
+-- Divider
 lib:CreateDivider({
     Text = "UI"
 })
 
+-- Keybind
 local ToggleUI = lib:CreateKeybind({
     Name = "Toggle UI",
     Default = Enum.KeyCode.RightShift,
